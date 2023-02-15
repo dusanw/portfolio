@@ -1,61 +1,16 @@
-@font-face {
-    font-family: 'Awesome';
-    src: url(./assets/fontawesome/webfonts/fa-brands-400.woff2) format("woff2"),
-        url(./assets/fontawesome/webfonts/fa-brands-400.ttf) format("ttf"),
-        url(./assets/fontawesome/webfonts/fa-regular-400.woff2) format("woff2"),
-        url(./assets/fontawesome/webfonts/fa-regular-400.ttf) format("ttf");
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #1E1E1E;
+    color: whitesmoke;
+    font-size: 16px;
+    font-family: 'Sora', sans-serif;
 }
 
 * {
     box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 16px;
-    font-family: staatliches;
-}
-
-.info-line {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5rem;
-    height: 1.875rem;
-    background-color: #0A0A0A;
-    color: whitesmoke;
-    font-size: 0.825rem;
-}
-
-@media only screen and (max-width: 780px) {
-    .info-line strong {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .info-line {
-        display: none;
-    }
-}
-
-
-.location {
-    display: flex;
-    gap: 1.25rem;
-    font-family: staatliches;
-    letter-spacing: 0.19rem;
-}
-
-.location span {
-    color: grey;
-}
-
-.social-icons {
-    display: inline-flex;
-    font-family: awesome;
-    gap: 0.75rem;
 }
 
 .hero {
@@ -63,8 +18,9 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .hero::before {
@@ -81,52 +37,6 @@ body {
     filter: brightness(60%);
 }
 
-.hero-content {
-    position: relative;
-    font-family: "Monserrat", sans-serif;
-    color: white;
-    text-align: left;
-    margin-left: 5rem;
-    margin-right: 12rem;
-    margin-bottom: 10rem;
-}
-
-.hero-meet {
-    font-size: 4rem;
-    font-weight: 800;
-    margin-bottom: 0;
-    color: #D3A20F;
-}
-
-.hero-title {
-    font-size: 3rem;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.hero-subtitle {
-    font-size: 2rem;
-    font-weight: 200;
-    margin-top: 1rem;
-}
-
-.hero-button {
-    background-color: #ae2d59;
-    color: white;
-    border: 1px solid #cb376a;
-    margin-top: 5rem;
-    padding: 0.9375rem 1.875rem;
-    font-family: "Monserrat", sans-serif;
-    font-size: 1.125rem;
-    font-weight: 200;
-    cursor: pointer;
-}
-
-.hero-button:hover {
-    background-color: #cb376a;
-    border: 1px solid #db7598;
-}
 
 .header-nav {
     display: flex;
@@ -135,19 +45,15 @@ body {
     align-items: center;
     height: 4rem;
     width: 100vw;
-    background-color: #D3A20F;
-    padding: 0 2rem;
-    font-family: staatliches;
+    padding-left: 13rem;
+    font-size: larger;
     letter-spacing: 0.19rem;
     color: whitesmoke;
-    /* position: fixed; */
+    /*position: fixed;*/
     z-index: 1;
     top: 2rem;
 }
 
-.header-nav img {
-    height: 2rem
-}
 
 .header-nav li {
     display: inline;
@@ -155,6 +61,30 @@ body {
 }
 
 .header-nav li:hover {
-    color: #0A0A0A;
+    color: #A4641A;
     cursor: pointer;
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    text-align: left;
+    margin: 2rem;
+    padding-left: 10rem;
+}
+
+.hero-content h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.hero-content h1 {
+    font-weight: bold;
+    font-size: 4.5rem;
+}
+
+.hero-content span {
+    background: -webkit-linear-gradient(#A4641A, #F1BF27);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
