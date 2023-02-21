@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
 
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    background-color: #1E1E1E;
+    background-color: #07090F;
     color: whitesmoke;
     font-size: 16px;
     font-family: 'Sora', sans-serif;
@@ -48,7 +48,7 @@ body {
     padding-left: 13rem;
     font-size: larger;
     letter-spacing: 0.19rem;
-    color: whitesmoke;
+    color: white;
     /*position: fixed;*/
     z-index: 1;
     top: 2rem;
@@ -84,7 +84,48 @@ body {
 }
 
 .hero-content span {
-    background: -webkit-linear-gradient(#A4641A, #F1BF27);
+    background: -webkit-linear-gradient(90deg, #A4641A, #F1BF27);
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.header-icons {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 1.75rem;
+    color: #F1BF27;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    z-index: 2;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1em 2em;
+}
+
+.services-decsription {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.services-box {
+    /* #A4641A = 164, 100, 26
+       #F1BF27= 241, 191, 39  */
+    box-shadow: rgba(164, 100, 26, 0.12) 0px 2px 4px 0px,
+    rgba(241, 191, 39, 0.32) 0px 2px 16px 0px;
+    border-radius: 0.5rem;
+    width: 33%;
+    padding: 1rem;
+    letter-spacing: 0.10rem;
+    line-height: 1.25rem;
 }
